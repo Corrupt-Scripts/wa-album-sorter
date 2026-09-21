@@ -11,7 +11,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-      - name: Accept licenses
+      - name: Accept SDK licenses
         run: yes | sdkmanager --licenses || true
       - uses: gradle/actions/setup-gradle@v3
       - name: Build APK
